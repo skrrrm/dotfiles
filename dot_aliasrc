@@ -1,5 +1,6 @@
 ## Alias file
 
+alias hx="helix" # helix
 alias v="nvim" # neovim
 alias nnn="nnn -e" # nnn
 alias cat="bat" # bat
@@ -47,6 +48,8 @@ alias paru='paru --bottomup'
 alias bc='bc -l' # calc with math
 
 alias ping='ping -c 5' # pretty ping
+
+alias diff='riff --color auto'
 
 #alias mpv="mpv --hwdec=auto"
 
