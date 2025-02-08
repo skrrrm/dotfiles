@@ -8,8 +8,8 @@ export PATH=$PATH:/home/a/.cargo/bin
 export PATH=$PATH:/Library/TeX/texbin/
 
 # Default programs
-export EDITOR="nvim"
-export VISUAL="nvim"
+export EDITOR="helix"
+export VISUAL="helix"
 export TERMINAL="konsole"
 export BROWSER="firefox"
 export READER="okular"

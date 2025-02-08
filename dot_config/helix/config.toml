@@ -9,9 +9,9 @@ bufferline = "multiple"
 color-modes = true
 
 [editor.statusline]
-left = ["mode", "separator", "spinner", "separator", "version-control, file-name"]
+left = ["spinner", "mode", "version-control"]
 center = ["file-absolute-path"]
-right = ["diagnostics", "separator", "position-percentage", "separator", "file-encoding", "separator", "file-line-ending", "separator", "file-type", "separator", "total-line-numbers"]
+right = ["diagnostics", "position-percentage", "total-line-numbers"]
 separator = "|"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
