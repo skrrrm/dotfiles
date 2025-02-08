@@ -1,4 +1,6 @@
 [[language]]
+
+[[language]]
 name = "markdown"
 language-servers = ["marksman", "mdpls"]
 
