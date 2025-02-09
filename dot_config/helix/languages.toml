@@ -1,4 +1,7 @@
 [[language]]
+name = "yaml"
+language-servers = ["ansible-language-server", "yaml-language-server"]
+file-types = ["yml", "yaml"]
 
 [[language]]
 name = "markdown"
