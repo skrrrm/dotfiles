@@ -5,8 +5,20 @@ file-types = ["yml", "yaml"]
 
 [[language]]
 name = "markdown"
-language-servers = ["marksman", "mdpls"]
+language-servers = ["marksman", "mdpls", "ltex-ls-plus"]
+soft-wrap.enable = true
 
 [language-server.mdpls]
 command = "/Users/asj/.cargo/bin/mdpls"
 config = { markdown.preview.auto = true, markdown.preview.browser = "firefox" }
+
+[[language]]
+name = "latex"
+language-servers = ["texlab", "ltex-ls-plus"]
+soft-wrap.enable = true
+
+[language-server.ltex-ls-plus.config]
+ltex.diagnosticServerity = "warning"
+ltex.ltex-ls.logLevel = "warning"
+ltex.disabledRules = { "en-US" = ["PROFANITY"], "en-GB" = ["PROFANITY"], "da-dk" = ["PROFANITY"]}
+ltex.dictionary = { "en-US" = ["builtin"], "en-GB" = ["builtin"] }
