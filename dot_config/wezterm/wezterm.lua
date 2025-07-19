@@ -11,12 +11,16 @@ local mux = wezterm.mux
 -- Custom key binding configurations
 config.leader = { key = 'CapsLock', timeout_milliseconds = 1000 }
 config.keys = {
-  { key = 'x', mods = 'LEADER', action = act.SplitHorizontal { domain = 'CurrentPaneDomain'},},
-  { key = 'z', mods = 'LEADER', action = act.SplitVertical { domain = 'CurrentPaneDomain'},},
+  { key = 'y', mods = 'LEADER', action = act.SplitHorizontal { domain = 'CurrentPaneDomain'},},
+  { key = 'x', mods = 'LEADER', action = act.SplitVertical { domain = 'CurrentPaneDomain'},},
   { key = 'h', mods = 'LEADER', action = act.ActivatePaneDirection 'Left' },
   { key = 'l', mods = 'LEADER', action = act.ActivatePaneDirection 'Right'},
   { key = 'k', mods = 'LEADER', action = act.ActivatePaneDirection 'Up'   },
   { key = 'j', mods = 'LEADER', action = act.ActivatePaneDirection 'Down',},
+  { key = 'h', mods = 'LEADER|CTRL', action = act.AdjustPaneSize {'Left', 5}},
+  { key = 'l', mods = 'LEADER|CTRL', action = act.AdjustPaneSize {'Right', 5}},
+  { key = 'k', mods = 'LEADER|CTRL', action = act.AdjustPaneSize {'Up', 5}},
+  { key = 'j', mods = 'LEADER|CTRL', action = act.AdjustPaneSize {'Down', 5}},
   { key = 't', mods = 'LEADER', action = act.SpawnCommandInNewTab},
   { key = 'w', mods = 'LEADER', action = act.CloseCurrentTab { confirm = false },},
   { key = 'r', mods = 'LEADER', action = act.ReloadConfiguration, },
@@ -74,7 +78,8 @@ config.colors = {
 }
 
 -- Font settings
-config.font = wezterm.font("FiraCode Nerd Font Mono")
+config.font = wezterm.font("AtkinsonHyperlegibleMono Nerd Font Mono")
+-- config.font = wezterm.font("FiraCode Nerd Font Mono")
 config.font_size = 13
 
 -- Tab bar
